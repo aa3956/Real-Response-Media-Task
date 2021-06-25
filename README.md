@@ -6,6 +6,7 @@ I used Javascript in order to do some validation such as checking for empty fiel
 
 If you wish to give this task a try on live preview please complete the form in order to recieve your application 
 to your email address, please check your Junk as that is where the email with the attachment and information is sent.
+Please wait patiently as the email to arrives in an estimated 2-3 minutes
 
 Please refer to this link in order to test:
 http://www.featwelt.com/Form.html
