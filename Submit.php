@@ -79,6 +79,6 @@
     // echo $fileName;
     
     //locate back to Form page
-    header("Location: Form.php?applicationSubmitted");
+    header("Location: Form.html?applicationSubmitted");
     
 ?>
