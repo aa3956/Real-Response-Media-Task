@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="Validation.js"></script>
+    <link rel="stylesheet" href="Style.css">
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <!--Application form-->
+          <form name="form" action="Submit.php" onsubmit="return validateForm()" method="post" enctype="multipart/form-data">
+              
+            <br>
+            <!--Error Messages-->
+            <div id="fnameErr" style="color:Red;display:none">* Please Enter Your First Name</div>
+            <div id="lnameErr" style="color:Red;display:none">* Please Enter Your Last Name</div>
+            <div id="emailErr" style="color:Red;display:none">* Please Enter Your Email</div>
+            <div id="telephoneErr" style="color:Red;display:none">* Please Enter Your Telephone</div>
+            <div id="address1Err" style="color:Red;display:none">* Please Enter Your Address Line 1</div>
+            <div id="postcodeErr" style="color:Red;display:none">* Please Enter Your Postcode</div>
+            <div id="countryErr" style="color:Red;display:none">* Please Select A Country</div>
+            <div id="descriptionErr" style="color:Red;display:none">* Please Enter A Description</div>
+            <div id="fileErr" style="color:Red;display:none">* Please Upload A CV</div>
+            <br>
+            
+            <div class="row">
+              <div class="col-50">
+                
+                <!--Input Section-->
+                <label>First Name</label>
+                <input type="text" name="firstname" placeholder="Enter First Name">
+                
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                
+                <label>Address Line 1</label>
+                <input type="text" name="address1" placeholder="Enter Address Line 1" >
+                
+                <label>Town</label>
+                <input type="text" name="town" placeholder="Enter Town" >
+                
+                <label>Postcode</label>
+                <input type="text" name="postcode" placeholder="Enter Postcode" >
+                
+              </div>
+    
+              <div class="col-50">
+                
+                <!--Input Section-->
+                <label>Last Name</label>
+                <input type="text" name="lastname" placeholder="Enter Last Name">
+                
+                <label>Telephone</label>
+                <input type="tel" name="telephone" placeholder="Enter Telephone Number" >
+                
+                <label>Address Line 2</label>
+                <input type="text" name="address2" placeholder="Enter Address Line 2">
+                
+                <label>County</label>
+                <input type="text" name="county" placeholder="Enter County">
+                
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                  <option value="">Choose Country</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Afghanistan">Afghanistan</option>
+                  <option value="United Arab Emirates">United Arab Emirates</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                </select>
+                
+              </div>
+            </div>
+            
+            <!--Description Text Area-->
+            <label>Description</label>
+            <textarea name="description"></textarea>
+            
+            <!--CV file input-->
+            <label>Your C.V</label>
+            Select a file <input type="file" name="fileToUpload" id="fileToUpload">
+            
+            <br><br>
+            <input class="btn" type="submit" value="Submit" name="submit">
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
