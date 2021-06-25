@@ -75,9 +75,6 @@
     // Send email 
     $mail = @mail($to, $subject, $message, $headers);  
     
-    // echo $fileLocation;
-    // echo $fileName;
-    
     //locate back to Form page
     header("Location: Form.html?applicationSubmitted");
     
